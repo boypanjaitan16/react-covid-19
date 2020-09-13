@@ -13,7 +13,7 @@ function App() {
       behavior: "smooth",
     });
   };
-  
+
   return (
     <div className="dashboard">
       <Nav />
@@ -29,7 +29,7 @@ function App() {
       </div>
       <div className="up">
         <div className="rounded" onClick={scrollTop}>
-          <img src="dist/img/up.svg" />
+          <img alt={'scroll to top'} src="dist/img/up.svg" />
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ body {
 
 .dashboard {
   background-color: #ffffff;
-  max-width: 30rem;
+  /*max-width: 30rem;*/
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -27,7 +27,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 30rem;
+  /*max-width: 30rem;*/
   width: 100%;
   height: 56px;
   box-shadow: 0 2px 2px 0 rgba(196, 196, 196, 0.5),
@@ -209,7 +209,7 @@ body {
   font-size: 12px;
 }
 .up {
-  max-width: 30rem;
+  /*max-width: 30rem;*/
   width: 100%;
   position: fixed;
   bottom: 24px;

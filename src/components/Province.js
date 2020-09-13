@@ -46,30 +46,30 @@ class Province extends Component {
               {this.state.isToggle ? "Kasus Indonesia" : "Kasus Dunia"}
             </button>
           </div>
-          {data.map((total) => (
-            <div className="detail-province__list">
+          {data.map((total, index) => (
+            <div className="detail-province__list" key={index.toString()}>
               <div className="detail-province__list-data">
-                <div class="data-province">
+                <div className="data-province">
                   {total.attributes.Country_Region}
                 </div>
-                <div class="data-covid">
-                  <div class="data-covid__detail">
-                    <div class="data-covid__detail-number">
+                <div className="data-covid">
+                  <div className="data-covid__detail">
+                    <div className="data-covid__detail-number">
                       {total.attributes.Confirmed}
                     </div>
-                    <div class="data-covid__detail-status">Terkonfirmasi</div>
+                    <div className="data-covid__detail-status">Terkonfirmasi</div>
                   </div>
-                  <div class="data-covid__detail">
-                    <div class="data-covid__detail-number">
+                  <div className="data-covid__detail">
+                    <div className="data-covid__detail-number">
                       {total.attributes.Recovered}
                     </div>
-                    <div class="data-covid__detail-status">Sembuh</div>
+                    <div className="data-covid__detail-status">Sembuh</div>
                   </div>
-                  <div class="data-covid__detail">
-                    <div class="data-covid__detail-number">
+                  <div className="data-covid__detail">
+                    <div className="data-covid__detail-number">
                       {total.attributes.Deaths}
                     </div>
-                    <div class="data-covid__detail-status">Meninggal</div>
+                    <div className="data-covid__detail-status">Meninggal</div>
                   </div>
                 </div>
               </div>
@@ -86,28 +86,28 @@ class Province extends Component {
               {this.state.isToggle ? "Kasus Indonesia" : "Kasus Dunia"}
             </button>
           </div>
-          {data.map((total) => (
-            <div className="detail-province__list">
+          {data.map((total, index) => (
+            <div className="detail-province__list" key={index.toString()}>
               <div className="detail-province__list-data">
-                <div class="data-province">{total.attributes.Provinsi}</div>
-                <div class="data-covid">
-                  <div class="data-covid__detail">
-                    <div class="data-covid__detail-number">
+                <div className="data-province">{total.attributes.Provinsi}</div>
+                <div className="data-covid">
+                  <div className="data-covid__detail">
+                    <div className="data-covid__detail-number">
                       {total.attributes.Kasus_Posi}
                     </div>
-                    <div class="data-covid__detail-status">Terkonfirmasi</div>
+                    <div className="data-covid__detail-status">Terkonfirmasi</div>
                   </div>
-                  <div class="data-covid__detail">
-                    <div class="data-covid__detail-number">
+                  <div className="data-covid__detail">
+                    <div className="data-covid__detail-number">
                       {total.attributes.Kasus_Semb}
                     </div>
-                    <div class="data-covid__detail-status">Sembuh</div>
+                    <div className="data-covid__detail-status">Sembuh</div>
                   </div>
-                  <div class="data-covid__detail">
-                    <div class="data-covid__detail-number">
+                  <div className="data-covid__detail">
+                    <div className="data-covid__detail-number">
                       {total.attributes.Kasus_Meni}
                     </div>
-                    <div class="data-covid__detail-status">Meninggal</div>
+                    <div className="data-covid__detail-status">Meninggal</div>
                   </div>
                 </div>
               </div>
